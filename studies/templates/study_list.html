@@ -1,0 +1,6 @@
+<h1>List of Studies</h1>
+<ul>
+    {% for study in studies %}
+        <li><a href="{% url 'study_detail' study.id %}">{{ study.title }}</a></li>
+    {% endfor %}
+</ul>
